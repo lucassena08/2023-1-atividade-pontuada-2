@@ -1,11 +1,7 @@
 package br.ucsal;
 
-public class Medico {
+public class Medico extends Funcionario {
     
-    private int matricula;
-    private String nome;
-    private int anoDeAdmissao;
-    private double salario;
     private int crm;
     private String nomesDasEspecialidades;
     
@@ -17,38 +13,6 @@ public class Medico {
         this.salario = salario;
         this.crm = crm;
         this.nomesDasEspecialidades = nomesDasEspecialidades;
-    }
-
-    public int getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(int matricula) {
-        this.matricula = matricula;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getAnoDeAdmissao() {
-        return anoDeAdmissao;
-    }
-
-    public void setAnoDeAdmissao(int anoDeAdmissao) {
-        this.anoDeAdmissao = anoDeAdmissao;
-    }
-
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
     }
 
     public int getCrm() {
@@ -66,9 +30,5 @@ public class Medico {
     public void setNomesDasEspecialidades(String nomesDasEspecialidades) {
         this.nomesDasEspecialidades = nomesDasEspecialidades;
     }
-
     
-
-    
-
 }

@@ -1,18 +1,18 @@
 package br.ucsal;
 
-public class Funcionario {
+public abstract class Funcionario {
 
-    private int matricula;
-    private String nome;
-    private double anoDeAdmissao;
-    private double salario;
+    protected int matricula;
+    protected String nome;
+    protected int anoDeAdmissao;
+    protected double salario;
 
-    public Funcionario(int matricula, String nome, double anoDeAdmissao, double salario) {
-        this.matricula = matricula;
-        this.nome = nome;
-        this.anoDeAdmissao = anoDeAdmissao;
-        this.salario = salario;
-    }
+    // public Funcionario(int matricula, String nome, double anoDeAdmissao, double salario) {
+    //     this.matricula = matricula;
+    //     this.nome = nome;
+    //     this.anoDeAdmissao = anoDeAdmissao;
+    //     this.salario = salario;
+    // }
 
     public int getMatricula() {
         return matricula;
@@ -30,11 +30,11 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public double getAnoDeAdmissao() {
+    public int getAnoDeAdmissao() {
         return anoDeAdmissao;
     }
 
-    public void setAnoDeAdmissao(double anoDeAdmissao) {
+    public void setAnoDeAdmissao(int anoDeAdmissao) {
         this.anoDeAdmissao = anoDeAdmissao;
     }
 
@@ -42,7 +42,7 @@ public class Funcionario {
         return salario;
     }
 
-    public void setSalario(double salario) {
+    public void setSalario(int salario) {
         this.salario = salario;
     }
     
