@@ -1,12 +1,12 @@
 package br.ucsal;
 
-public class Enfermeira extends Funcionario {
+public class Enfermeiro extends Funcionario {
     
     private int numeroDeinscricaoNoCoren;
     private String tipoDeAtuacao;
     private int cargaHoraria;
 
-    public Enfermeira(int matricula, String nome, int anoDeAdmissao, int salario, int numeroDeinscricaoNoCoren,
+    public Enfermeiro(int matricula, String nome, int anoDeAdmissao, int salario, int numeroDeinscricaoNoCoren,
             String tipoDeAtuacao, int cargaHoraria) {
         super.matricula = matricula;
         this.nome = nome;
